@@ -1,0 +1,215 @@
+/* Reset sederhana */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(background.png);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background: #c16a2a;
+  color: white;
+  border-radius: 20px;
+  margin: 20px 20px;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+header p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* About Us */
+.about {
+  padding: 20px;
+  background:white;
+  border-radius: 12px;
+  margin: 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #c16a2a;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+
+/* Showcase */
+.showcase {
+  padding: 20px;
+  text-align: center;
+}
+
+.showcase h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #c16a2a;
+}
+
+/* Container untuk 2 produk per baris */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: calc(50% - 10px); /* 2 produk per baris */
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.price {
+  font-size: 14px;
+  color: #c16a2a;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.btn {
+  padding: 8px 14px;
+  font-size: 14px;
+  display: inline-block;
+  background: #c16a2a;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background: #e5673d;
+}
+
+
+/* FAQ */
+.faq {
+  padding: 20px;
+  background:white;
+  border-radius: 12px;
+  margin: 20px;
+}
+
+.faq h2 {
+  text-align: center;
+  color: #c16a2a;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 12px;
+  text-align: left;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+.faq-question:hover {
+  color: #c16a2a;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding-left: 10px;
+}
+
+.faq-answer p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+/* Social Buttons Floating */
+.social-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.social-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 24px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.social-buttons a:hover {
+  transform: scale(1.1);
+}
+
+/* Warna khusus */
+.social-buttons .whatsapp {
+  background: #25d366;
+}
+
+.social-buttons .instagram {
+  background: #c13584;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #c16a2a;
+  color: white;
+  font-size: 14px;
+  margin-top: 20px;
+}
